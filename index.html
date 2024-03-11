@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cronómetro AMRAP con Preparación y Sonido</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="cronometroPreparacion">
+    <span id="segundosPreparacion">05</span>
+  </div>
+  <div id="cronometro">
+    <span id="minutos">00</span>:<span id="segundos">00</span>
+  </div>
+  <div id="rondasCompletadas">Rondas Completadas: 0</div>
+  <button onclick="iniciarPreparacion()">Iniciar AMRAP</button>
+  <button onclick="detenerCronometro()">Detener</button>
+  <button onclick="reiniciarCronometro()">Reiniciar</button>
+
+  <audio id="countdownSound" src="bleep.wav" preload="auto"></audio>
+  <audio id="countdownSound2" src="bleeplarge.wav" preload="auto"></audio>
+
+
+</body>
+</html>
